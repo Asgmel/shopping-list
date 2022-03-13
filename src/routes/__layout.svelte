@@ -5,6 +5,7 @@
 
 	import Header from '$lib/header/Header.svelte';
 	import Footer from '$lib/footer/Footer.svelte';
+	import Container from '$lib/content/Content.svelte';
 </script>
 
 <svelte:head>
@@ -18,21 +19,14 @@
 
 <!-- Content -->
 <Header />
-<main>
+<Container>
 	<slot />
-</main>
+</Container>
 <Footer />
 
 <style>
 	:global(body) {
 		display: grid;
-		grid-template-areas: 'header content footer';
-	}
-
-	main {
-		width: 100vw;
-		min-height: calc(100vh - var(--header-height) - var(--footer-height));
-		grid-area: content;
-		background-color: var(--color-secondary);
+		grid-template-areas: 'header' 'content' 'footer';
 	}
 </style>

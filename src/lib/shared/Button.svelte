@@ -16,7 +16,7 @@
 		<div
 			class="button"
 			class:round
-			style="--button-width: {width}; 
+			style=" --button-width: {width}; 
                     --button-height: {height};
                     --button-color: {color};
                     --button-background-color: {backgroundColor};
@@ -29,7 +29,7 @@
 	<button
 		class:round
 		class="button"
-		style="--button-width: {width};
+		style=" --button-width: {width};
                 --button-height: {height};
                 --button-color: {color};
                 --button-background-color: {backgroundColor};
